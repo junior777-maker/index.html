@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO DA ACADEMIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FORMULÁRIO DA ACADEMIA</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" method="POST">
+                <label for="nome">Nome e Sobrenome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="nao_informar">Prefiro não informar</option>
+                </select>
+                
+                <label for="endereco">Endereço:</label>
+                <textarea id="endereco" name="endereco" placeholder="Digite seu endereço completo" required></textarea>
+                
+                <label>Plano de Treinamento:</label>
+                <input type="radio" id="basico" name="plano" value="basico" required>
+                <label for="basico">Básico</label>
+                <input type="radio" id="intermediario" name="plano" value="intermediario" required>
+                <label for="intermediario">Intermediário</label>
+                <input type="radio" id="avancado" name="plano" value="avancado" required>
+                <label for="avancado">Avançado</label>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Academia Arildo Junior. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
